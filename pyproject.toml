@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-ime-reranker"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["laya==0.3.26", "pyyaml>=6", "opencc-python-reimplemented==0.1.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=9", "py7zr>=1", "ziglang>=0.15", "pillow==12.3.0", "resvg-py==0.5.0"]
+decision = ["gliclass==0.1.20", "pydantic==2.13.5", "scikit-learn==1.9.1"]
+gpu-diagnostic = ["onnx==1.23.1", "onnxruntime-directml==1.24.4"]
+
+[project.scripts]
+ime-serve = "ime_reranker.server:main"
+ime-evaluate = "ime_reranker.evaluate:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

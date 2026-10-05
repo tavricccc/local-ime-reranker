@@ -1,0 +1,12 @@
+# Dictionary data is downloaded from the pinned upstream, not redistributed here.
+# Sources and per-component license notes: docs/onion-integration.md
+---
+name: local_ai_onion
+version: "2026.10.05"
+sort: by_weight
+vocabulary: essay-zh-hant-mc
+import_tables:
+  - terra_pinyin_onion
+  - terra_pinyin_onion_add
+  - phrases.chtp
+...

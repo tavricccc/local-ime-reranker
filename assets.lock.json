@@ -1,0 +1,81 @@
+{
+  "rime": {
+    "version": "1.17.0",
+    "url": "https://github.com/rime/librime/releases/download/1.17.0/rime-33e7814-Windows-msvc-x64.7z",
+    "sha256": "7478c7caa4ff6b37de86daba1f7ce4a994a4f5ba24872a820fb2b3a9b01fed15",
+    "dll_sha256": "86b4c7357d4c6d293ce5589b234d8859ca2ac30923a03bedfa3926eeaf97fb0b"
+  },
+  "windows": {
+    "weasel": {
+      "version": "0.17.4",
+      "url": "https://github.com/rime/weasel/releases/download/0.17.4/weasel-0.17.4.0-installer.exe",
+      "sha256": "cf509534a8f5f8af9c98ed7cbb8f135439f145a8cbe7e50ede42bb5b5ab45c29",
+      "license": "GPL-3.0"
+    },
+    "rime_x86": {
+      "version": "1.17.0",
+      "url": "https://github.com/rime/librime/releases/download/1.17.0/rime-33e7814-Windows-msvc-x86.7z",
+      "sha256": "af235c26c06152ce09ceb8fe9d9ab9fba7ab43ce30aa952b40174d806f5cc3d9",
+      "dll_sha256": "d123622cec3bc209e0fdce5192adbe43634223518c78575b25c6fd49b0b896a6",
+      "license": "BSD-3-Clause and bundled dependency licenses"
+    }
+  },
+  "models": {
+    "laya-multilingual": {
+      "repo": "convaiinnovations/laya-multilingual",
+      "revision": "1720e3e3357cfe1e281542e223f8273b0890ca34",
+      "license": "Apache-2.0"
+    },
+    "rbt3": {
+      "repo": "hfl/rbt3",
+      "revision": "0aa0527ff4170f29e1dfd3eb6ef60dc67e1bf75c",
+      "license": "Apache-2.0",
+      "allow_patterns": ["*.json", "vocab.txt", "pytorch_model.bin", "README.md"]
+    },
+    "julia": {
+      "repo": "SupersonicLabs/Julia-1",
+      "revision": "a85b127321d580d65176c89ced8273f305745d85",
+      "license": "Apache-2.0",
+      "allow_patterns": ["*.json", "*.toml", "*.safetensors", "julia/*.py", "julia/router/*.py", "encoder/*", "tokenizer/*", "README.md"]
+    },
+    "verdict": {
+      "repo": "heman10x/rlcd-modernbert-151m",
+      "revision": "8af2496eb63c7fa66d7d234e1f62629380030eb4",
+      "license": "Apache-2.0",
+      "allow_patterns": ["*.json", "model.safetensors", "README.md"]
+    },
+    "nanojev": {
+      "repo": "C-Tianyu/NanoJev",
+      "revision": "047b927b30882a1138fc504821b82ac145a4b81a",
+      "license": "Source MIT; Qwen base Apache-2.0; model card retains upstream terms",
+      "allow_patterns": ["best.safetensors", "config.json", "backbone_config/*", "tokenizer/*", "README.md", "SHA256_MANIFEST.json", "source/*"]
+    },
+    "qwen3-0.6b": {
+      "repo": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "license": "Apache-2.0",
+      "allow_patterns": ["*.json", "*.safetensors", "*.jinja", "README.md"]
+    }
+  },
+  "lexicons": {
+    "onion": {
+      "repo": "https://github.com/sunsun8170/Onion-Rime-Bopomo-Revised",
+      "revision": "e553b85b2f09d70a9732e055a45e145d9e28917c",
+      "license": "Mixed upstream sources; see docs/onion-integration.md",
+      "files": {
+        "terra_pinyin_onion.dict.yaml": "36e9fa1ab30a1a9d588a1329e67c6eb48861c7bb6051277bc8f1f2704bb96a1e",
+        "terra_pinyin_onion_add.dict.yaml": "198b11fafe126c23f7dc411c2bd409eb2b6aa806059a20c75d9bfc5a161c18f4",
+        "phrases.chtp.dict.yaml": "f0f9e949740e235311662255752c55c9398c0c1e831299a02e5ce1cb3d77da0f",
+        "essay-zh-hant-mc.txt": "c9c0286715dce7ae8eebc10c9a2d82b7322ed6063b4de79dec6ba707959e76a2"
+      }
+    }
+  },
+  "references": {
+    "Jevboard": "1980e994b5cffaa00e0477cb7b4a68881ef604d8",
+    "laya_source": "2e4d9c87e8b1621deb344eac7de5c7258f32f849",
+    "weasel_source": "d73f6295e8252ed2f7b9c12bae32e9001b1afdaa",
+    "verdict_source": "30f15564821626ca5c1ad5b2638c4eb7078787dd",
+    "nanojev_source": "76fdfc9ecdca45a9bcef17991a07d3041a87685a",
+    "anyjev_source": "e6efe1233a57ddc8b291eeb206142bcec003d10b"
+  }
+}
